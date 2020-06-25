@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>https://www.programmingtutorial.org</loc>
+  <priority>1.0</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.programmingtutorial.org/c-programming-tutorial/c-programming-language.html</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.programmingtutorial.org/c-programming-tutorial/hello-world-program-in-c.html</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.programmingtutorial.org/c-programming-tutorial/while-loop-in-c.html</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.programmingtutorial.org/c-programming-tutorial/goto-statement-in-c.html</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.programmingtutorial.org/c-programming-tutorial/nested-if-statement-in-c.html</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.programmingtutorial.org/c-programming-tutorial/switch-statement-in-c.html</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.programmingtutorial.org/c-programming-tutorial/if-else-statement-in-c.html</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.programmingtutorial.org/c-programming-tutorial/continue-statement-in-c.html</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.programmingtutorial.org/c-programming-tutorial/break-statement-in-c.html</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.programmingtutorial.org/c-programming-tutorial/do-while-loop-in-c.html</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.programmingtutorial.org/c-programming-tutorial/nested-loops-in-c.html</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.programmingtutorial.org/homepage.html</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_environment_setup.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_program_structure.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_basic_syntax.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_data_types.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_variables.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_storage_classes.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_operators.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_decision_making.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_loops.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_functions.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_scope_rules.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_arrays.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_pointers.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_strings.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_structures.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_unions.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_bit_fields.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_typedef.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_input_output.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_file_io.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_preprocessors.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_header_files.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_type_casting.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_error_handling.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_recursion.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_variable_arguments.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_memory_management.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_command_line_arguments.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/cprogramming_questions_answers.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_quick_guide.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/c_useful_resources.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.programmingtutorial.org/cprogramming/cprogramming_discussion.htm</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.programmingtutorial.org/hello-world-program-in-c-programming/</loc>
+  <priority>0.9</priority>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>

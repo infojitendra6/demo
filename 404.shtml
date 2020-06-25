@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Error</title>
+     </head>
+     <body style="background:green;">
+     REQUEST_URI<br>
+     /robots.tx<br>
+     
+     
+     <p>this page is not found . </p>
+     <a href="allexamination.com" target=_blank>Return Home page</a>
+     </body>
+     </html>

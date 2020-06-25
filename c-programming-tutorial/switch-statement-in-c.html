@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+     <title>switch statement in C programming language &raquo; programming tutorial </title>
+<!-- Template is taken from Hydro Template 
+http://www.templatemo.com/tm-509-hydro
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="switch statement in C is an alternate of if else ladder statement which allows  to execute multiple operations for the different possibles values in program .">
+     <meta name="keywords" content="switch statement in C, example of switch statement, switch case c, switch case flowchart, switch case syntax, C Programming tutorial, programming tutorial ">
+     
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	 <link rel="shortcut icon" href="https://www.programmingtutorial.org/images/logo.png" type="image/x-icon"/>
+ 
+    <!--addtional property -->
+      <link rel="profile" href="http://gmpg.org/xfn/11" />
+	 <base href="https://www.programmingtutorial.org/" />
+	 <link rel="canonical" href="https://www.programmingtutorial.org/c-programming-tutorial/switch-statement-in-c.html" />
+      <meta property="og:url" content="https://www.programmingtutorial.org/c-programming-tutorial/switch-statement-in-c.html" />
+	  <meta property="og:type" content="article">
+	  <meta property="article:section" content="programming tutorial" />
+      <meta property="og:title" content="switch statement in C programming language" />
+      <meta property="og:description" content="switch statement in C is an alternate of if else ladder statement which allows  to execute multiple operations for the different possibles values in program " />
+      <meta property="og:image" content="https://www.programmingtutorial.org/image/switch-condition.png" />
+      
+
+	 <link rel="alternate" href="https://www.programmingtutorial.org/c-programming-tutorial/switch-statement-in-c.html" hreflang="en-us" />
+     <link rel="alternate" href="https://www.programmingtutorial.org/c-programming-tutorial/switch-statement-in-c.html" hreflang="en-gb" />
+     <link rel="alternate" href="https://www.programmingtutorial.org/c-programming-tutorial/switch-statement-in-c.html" hreflang="en-ca" />
+     <meta content='UNITED STATE' name='geo.placename'/>
+     <meta content='US' name='geo.country'/>
+     <meta content='GB' name='geo.country:alternate'/>
+     <meta content='CA' name='geo.country:alternate'/>
+     <meta content='en_US' property='og:locale'/>
+     <meta content='en_GB' property='og:locale:alternate'/>
+     <meta content='en_CA' property='og:locale:alternate'/>
+	
+     
+	    <meta property="article:tag" content="switch statement in C" />
+       <meta property="article:tag" content="example of switch statement" />
+       <meta property="article:tag" content="switch case c" />
+	   <meta property="article:tag" content="switch case flowchart" />
+	   <meta property="article:tag" content="switch case syntax" />
+	   <meta property="article:tag" content="c programming tutorial" />
+       <meta property="article:tag" content="programming tutorial" />
+      <meta property="og:site_name" content="programmingtutorial" />
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@theeducation3">
+      <meta name="twitter:title" content="switch statement in C programming language">
+      <meta name="twitter:description" content="switch statement in C is an alternate of if else ladder statement which allows  to execute multiple operations for the different possibles values in program ">
+      <meta name="twitter:creator" content="programming tutorial">
+      <meta name="twitter:image:src" content="https://www.programmingtutorial.org/image/switch-condition.png">
+ 
+      <meta name="author" content="https://www.programmingtutorial.org">
+	  <script type='application/ld+json'>
+{"@context":"https://schema.org","@graph":
+[{"@type":"Organization","name":"programming tutorial","url":"https://www.programmingtutorial.org"},
+ {"@type":"WebSite","url":"https://www.programmingtutorial.org","name":"programmingtutorial"},
+{"@type":"ImageObject","url":"https://www.programmingtutorial.org/image/switch-condition.png",
+"width":500,"height":500,"caption":"nested if statement in c"},
+{"@type":"WebPage", "url":"https://www.programmingtutorial.org/c-programming-tutorial/switch-statement-in-c.html","inLanguage":"en-US",
+"name":"switch statement in C programming language"},
+{"@type":"Article", "headline":"switch statement in C programming language",
+"description":"switch statement in C is an alternate of if else ladder statement which allows  to execute multiple operations for the different possibles values in program ",
+"keywords":" switch statement in C, example of switch statement, switch case c, switch case flowchart, switch case syntax, C Programming tutorial, programming tutorial",
+"articleSection":"programming tutorial"}]}
+</script>
+	  
+<!--end addtional property -->
+  <!-- SCRIPTS -->
+     <script src="https://www.programmingtutorial.org/js/jquery.js"></script>
+     <script src="https://www.programmingtutorial.org/js/bootstrap.min.js"></script>
+     <script src="https://www.programmingtutorial.org/js/jquery.stellar.min.js"></script>
+     <script src="https://www.programmingtutorial.org/js/jquery.magnific-popup.min.js"></script>
+     <script src="https://www.programmingtutorial.org/js/smoothscroll.js"></script>
+     <script src="https://www.programmingtutorial.org/js/custom.js"></script>
+     
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="https://www.programmingtutorial.org/css/style1.css">
+
+
+</head>
+<body>
+
+     <!-- PRE LOADER -->
+     <section class="preloader" >
+          <div class="spinner">
+               <span class="spinner-rotate" ></span>
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation" id="jkn">
+          <div >
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+						 <span class="icon icon-bar"></span>
+                       
+                    </button>
+
+                    <!-- lOGO TEXT HERE  -->
+                   
+               </div>
+<!-- disable right click 
+			   
+			   <script type="text/javascript">
+	
+$(function() {
+	$(this).bind('contextmenu', function() {
+			return false;
+	})
+	
+})
+</script>  -->
+<!-- does not copy cut pest 
+<script type="text/javascript">
+	
+$(document).ready(function() {
+	$('body').bind('cut copy paste', function (e) {
+		e.preventDefault();
+	})
+})
+</script>-->
+
+ <!--  MENU LINKS -->
+			  
+               <div class="collapse navbar-collapse" >
+			  
+                     <ul class="nav navbar-nav  navbar-left ">
+                            <li><a href="https://www.programmingtutorial.org"><i class="fa fa-home" style="font-size: 30px;"></i></a></li>
+
+                         <li><a href="https://www.programmingtutorial.org/python-programming/python-programming-tutorial.html" class="smoothScroll">python</a></li>
+                         <li><a href="https://www.programmingtutorial.org" class="smoothScroll">C Programming</a></li>
+						 <li><a href="https://www.programmingtutorial.org/c-plus-plus-programming/c-plus-plus-programming.html" class="smoothScroll">C++ Programming</a></li>
+						 <li><a href="https://www.programmingtutorial.org/java-programming/introduction-to-java-programming.html" class="smoothScroll"> Java </a></li>
+                         
+                        
+                    </ul>
+                   <ul class="nav navbar-nav navbar-right" id="jkn2">
+                         <li><a href="https://www.facebook.com/allexamination28"><i class="fa fa-facebook-square"></i></a></li>
+                         <li><a href="https://twitter.com/Jitendr49342926"><i class="fa fa-twitter"></i></a></li>
+                         <li><a href="https://www.instagram.com/jitukumar2016/?hl=bn"><i class="fa fa-instagram"></i></a></li>
+						  <li><a href="https://www.linkedin.com/in/jitendra-kumar-95a8a5163/"><i class="fa fa-linkedin"></i></a></li>
+       
+                    </ul> 
+					
+               </div>
+			   </div>
+
+          
+     </section>
+	 
+	 
+     <!-- HOME -->
+                <section>
+           <div class="container">
+		    
+     <!-- HOME -->
+	 <div class="row">
+
+                   
+	  <div class="col-md-8 col-sm-8">
+	  <h1>switch statement in C programming</h1>
+	 <p>The<b>Switch statement in C</b> is an alternate method of if else ladder statement, which allows to execute multiple operations for many different possibles values in program for a single variable called switch statement. </p>
+	 <p>
+	 <strong>Rules for switch statement in C language</strong><br>
+	 1.Its expression must be an integer or character type.<br>
+2.The case value of switch statement must be an integer or character.<br>
+3.The switch statement can have an optional default case in program, which must appear at the end of the switch statement.</p>
+	
+	 <p><strong>Flowchart of switch statement in C programming</strong></p>
+	 
+	<img src="https://www.programmingtutorial.org/image/switch-condition.png" alt="switch statement in C" width="100%" height="100%">
+	<p><strong>The syntax of switch statement:-</strong><br>
+<pre ><p>switch(expression) {
+case value 1  :
+statement(s);
+break; <strong> /* optional */</strong> 
+case value 2  :
+statement(s);
+break; <strong> /* optional */</strong> 
+.......
+.......
+.......
+.......
+default : <strong> /* Optional */</strong> 
+statement(s);
+}</p></pre> 
+
+
+<div style="color:white">switch case c, switch case flowchart, switch case syntax, C Programming tutorial, programming tutorial  </div>
+                       
+					
+<p><strong>1. example of switch statement :-</strong></p>
+<pre ><p>#include &lt;stdio.h&gt;
+int main ()
+{    
+int a;     
+printf("enter any random number: ");    
+scanf("%d",&a);    
+switch(a){    
+case 11:    
+printf("\nyou are a good student");    
+break;    
+case 80:    
+printf("\nyou are a good teacher ");    
+break; 
+case 60:    
+printf("\nyou are a good engineer ");    
+break;
+case 100:    
+printf("\nyou are a good police");    
+break;    
+default:    
+printf("\nyou are human");    
+}    
+return 0;  
+}</p></pre> 
+<p><strong>Output after compilation and execution of program is given below.</strong></p>
+<pre ><p><strong>when input is 54 </strong>
+enter any random number: 54
+you are human
+<strong>when input is 60</strong>
+enter any random number: 60
+you are a good engineer
+<strong>when input is 11</strong>
+enter any random number: 11
+you are a good student</p></pre> 
+
+					   
+<p><strong>2.Example of switch statement:-</strong></p>
+<pre ><p>#include &lt;stdio.h&gt;
+int main ()
+{
+char ch;     
+printf("enter any one alphabets: ");    
+scanf("%c",&ch);    
+switch(ch){    
+case 'a':
+<strong> //It is case sensitive, so i use capital letter and small letter.</strong> 
+case 'A': 
+printf("\n a stands for apple");    
+break;    
+case 'b':
+case 'B': 
+printf("\nb stands for ball ");    
+break; 
+case 'c':
+case 'C': 
+printf("\n C stands for cat ");    
+break;
+case 'd':
+case 'D':
+printf("\n  d stands for dog");    
+break;    
+default:    
+printf("\n please you enter a, b, c or d");
+} 
+}</p></pre> 
+<p><strong>Output after compilation and execution of program is given below.</strong></p>
+<pre ><p><strong>when input is a</strong>
+enter any one alphabets: a
+ a stands for apple
+<strong>when input is B</strong>
+ enter any one alphabets: B
+ stands b for ball
+<strong>when input is u</strong>
+enter any one alphabets: u
+ please you enter a, b, c or d</p></pre> 
+
+					   
+<p><strong>3. example of switch statement:-</strong></p>
+<pre ><p>#include &lt;stdio.h&gt;
+int main ()
+{
+char ch;
+double a, b;
+printf("Enter an operator (+, -, *, /): \n");
+scanf("%c", &ch);
+printf("Enter two number: ");
+scanf("%lf %lf",&a, &b);
+switch(ch)
+{
+ case '+':
+ printf("\n The sum of your Enter number is  %.1lf", a+b);
+ break;
+ case '-':
+ printf("\n The subtraction of your Enter is %.1lf", a-b);
+ break;
+ case '*':
+ printf("\n The multiplication of your Enter number is %.1lf", a*b);
+ break;
+ case '/':
+ printf("\n The division of your Enter number is %.2f", a/b);
+ break;
+ // division does not work, when value of b=0
+ default:
+ printf("\n you does not Enter currect operator");
+    }
+    return 0;
+}</p></pre> 
+<p><strong>Output after compilation and execution of program is given below.</strong></p>
+<pre ><p><strong>when input is + and any two digits</strong>
+Enter an operator (+, -, *, /): +
+Enter two number: 84 45
+The sum of your Enter number is  129.00
+<strong>when input is - and any two digits</strong>
+Enter an operator (+, -, *, /): -
+Enter two number: 86 57
+The subtraction of your Enter is 29.00
+<strong>when input is / and any two digits</strong>
+Enter an operator (+, -, *, /): /
+Enter two number: 45 57
+The division of your Enter number is 0.79</p></pre> 
+
+
+
+<h4>switch statement without break keyword in c programming</h4>
+
+<p>The break statement in switch case is optional. If there is no break statement found, then all cases will be executed after the matched case.</p>
+	<p><strong>The syntax of if else ladder statement in C:-</strong><br>
+<pre ><p>switch(expression) {
+case value 1:
+statement(s);
+case value 2:
+statement(s);
+.......
+.......
+.......
+.......
+default : <strong> /* Optional */</strong>
+statement(s);
+}</p></pre> 
+
+           
+<p><strong>1.Program of switch statement in C:-</strong></p>
+<pre ><p>#include &lt;stdio.h&gt;
+int main ()
+{
+int a;     
+printf("enter any random number: ");    
+scanf("%d",&a);    
+switch(a){    
+case 11:    
+printf("\nyou are a good student");    
+case 80:    
+printf("\nyou are a good teacher ");    
+case 60:    
+printf("\nyou are a good engineer ");    
+case 100:    
+printf("\nyou are a good police");    
+default:    
+printf("\nyou are human");    
+}    
+return 0;  
+}</p></pre> 
+<p><strong>Output after compilation and execution of program is given below.</strong></p>
+<pre ><p><strong>when input is 60</strong>
+enter any random number: 60 
+you are a good engineer 
+you are a good police
+you are human
+<strong>when input is 70</strong>
+ enter any random number: 70
+you are human
+<strong>when input is 100</strong>
+enter any random number: 100
+you are a good police
+you are human</p></pre> 
+
+ 
+
+
+
+    
+						 </div>
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+						  <div class="col-md-4 col-sm-4">
+<h2>C Programming Tutorial</h2>
+
+<div class="jk">
+
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/c-programming-language.html"><h6>what is C Programming</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/hello-world-program-in-c.html"><h6>Hello World Program</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/while-loop-in-c.html"><h6>while loop in c</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/goto-statement-in-c.html"><h6>goto statement in c</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/nested-if-statement-in-c.html"><h6>nested if statement</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/switch-statement-in-c.html"><h6>switch statement in C</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/if-else-statement-in-c.html"><h6>if else statement </h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/continue-statement-in-c.html"><h6>continue statement </h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/break-statement-in-c.html"><h6>break statement</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/do-while-loop-in-c.html"><h6>do while loop in c</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/nested-loops-in-c.html"><h6>nested loops in c</h6></a>
+
+
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/loops-in-c-programming.html"><h6>loops in c programming</h6></a>
+
+
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/functions-in-c-programming.html"><h6> Function in C</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/types-of-user-defined-functions-in-c.html" ><h6>user-defined functions</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/call-by-value-and-call-by-reference-in-c.html"><h6>Call by reference</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/local-variable-and-global-variable.html"><h6>Local variable</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/recursion-function-in-c.html"><h6>Recursion function in c</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/array-in-c-programming-language.html"><h6>Array in c programming</h6></a>
+
+
+
+
+
+</div>
+
+
+</div>
+	 
+	
+	 </div>
+	 </div>
+	
+	  </div>
+			   <!-- FOOTER -->
+     <footer data-stellar-background-ratio="0.5">
+         
+               <div class="row" id="jk">
+
+                    <div class="col-md-3 col-sm-3">
+                        <div class="footer-thumb"> 
+                               <h4>Share Post</h4>
+                             <!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_email"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_linkedin"></a>
+<a class="a2a_button_pinterest"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+                    
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3"> 
+                          <div class="footer-thumb" > 
+                               <h4>Join Me</h4>
+                              <ul class="social-icon" >
+                         <li><a href="https://www.facebook.com/thepowerofscien28/"><i class="fa fa-facebook-square"></i></a></li>
+                         <li><a href="https://twitter.com/Jitendr49342926"><i class="fa fa-twitter"></i></a></li>
+                         <li><a href="https://twitter.com/Jitendr49342926"><i class="fa fa-instagram"></i></a></li>
+                        
+                        
+						  <li><a href="https://www.linkedin.com/in/jitendra-kumar-95a8a5163/"><i class="fa fa-linkedin"></i></a></li>
+                         
+                    </ul>
+                   
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3"> 
+                         <div class="footer-thumb" id="jk2" > 
+                              <h4> Our Services</h4>
+                              <ul class="footer-link">
+                                  
+                         <li><a href="https://www.programmingtutorial.org/python-programming/python-programming-tutorial.html" class="smoothScroll">python</a></li>
+                         <li><a href="https://www.programmingtutorial.org" class="smoothScroll">C Programming</a></li>
+						 <li><a href="https://www.programmingtutorial.org/c-plus-plus-programming/c-plus-plus-programming.html" class="smoothScroll">C++ Programming</a></li>
+						 <li><a href="https://www.programmingtutorial.org/java-programming/introduction-to-java-programming.html" class="smoothScroll"> Java </a></li>
+                         
+                                   
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3"> 
+                         <div class="footer-thumb" id="jk3"> 
+                        <h4 >Information</h4>
+                              <ul class="footer-link">
+                                  <li><a href="https://www.programmingtutorial.org/about-me.html">About Me</a></li>
+								  	<li><a href="https://www.programmingtutorial.org/contact-me.php">Contect Me</a></li>
+                                   <li><a href="https://www.programmingtutorial.org/privacy-policy.html">Privacy Policy</a></li>
+								    <li><a href="https://www.programmingtutorial.org/term-and-condition.html">Term and Condition</a></li>
+                                  
+                              </ul>
+                         </div>
+                    </div>                    
+                       
+                    <div class="col-md-12 col-sm-12">
+                         <div class="footer-bottom">
+                              <div class="col-md-6 col-sm-6">
+                                   <div class="copyright-text"> 
+                                        <p>Copyright &copy; 2019 the power of seience</p>
+                                   </div>
+                              </div>
+							  <div class="col-md-6 col-sm-6">
+                                   <div itemscope itemtype="http://schema.org/Person">
+   <span itemprop="location">Location : Indian</span><br>
+   <span itemprop="email">Email : allexamination28@gmail.com</span>
+   
+  
+</div>
+                              </div>
+                             
+                         </div>
+                    </div>
+                    
+               </div>
+          
+     </footer>
+
+
+	
+</body>
+</html>

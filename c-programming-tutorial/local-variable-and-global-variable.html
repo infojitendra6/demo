@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+     <title>Local variable and global variable &raquo; programming tutorial </title>
+<!-- Template is taken from Hydro Template 
+http://www.templatemo.com/tm-509-hydro
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="Local variable and global variable :-  Variable that defined within the body of a function or a block are local to that function are called local variables">
+     <meta name="keywords" content="Local variable and global variable, Local variable example, Global variable example, Difference between local variable and global variable, Local variable, C Programming tutorial, programming tutorial ">
+     
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	    <link rel="shortcut icon" href="https://www.programmingtutorial.org/images/logo.png" type="image/x-icon"/>
+ 
+    <!--addtional property -->
+      <link rel="profile" href="http://gmpg.org/xfn/11" />
+	 <base href="https://www.programmingtutorial.org/" />
+	 <link rel="canonical" href="https://www.programmingtutorial.org/c-programming-tutorial/local-variable-and-global-variable.html" />
+      <meta property="og:url" content="https://www.programmingtutorial.org/c-programming-tutorial/local-variable-and-global-variable.html" />
+	  <meta property="og:type" content="article">
+	  <meta property="article:section" content="programming tutorial" />
+      <meta property="og:title" content="Local variable and global variable" />
+      <meta property="og:description" content="Local variable and global variable :-  Variable that defined within the body of a function or a block are local to that function are called local variables" />
+      <meta property="og:image" content="https://www.programmingtutorial.org/image/Local-variable.png" />
+      
+      <link rel="alternate" href="https://www.programmingtutorial.org/c-programming-tutorial/local-variable-and-global-variable.html" hreflang="en-us" />
+     <link rel="alternate" href="https://www.programmingtutorial.org/c-programming-tutorial/local-variable-and-global-variable.html" hreflang="en-gb" />
+     <link rel="alternate" href="https://www.programmingtutorial.org/c-programming-tutorial/local-variable-and-global-variable.html" hreflang="en-ca" />
+     <meta content='UNITED STATE' name='geo.placename'/>
+     <meta content='US' name='geo.country'/>
+     <meta content='GB' name='geo.country:alternate'/>
+     <meta content='CA' name='geo.country:alternate'/>
+     <meta content='en_US' property='og:locale'/>
+     <meta content='en_GB' property='og:locale:alternate'/>
+     <meta content='en_CA' property='og:locale:alternate'/>
+    
+	
+     
+	    <meta property="article:tag" content="Local variable and global variable" />
+       <meta property="article:tag" content="Local variable example" />
+       <meta property="article:tag" content="Global variable example" />
+	   <meta property="article:tag" content="Difference between local variable and global variable" />
+	   <meta property="article:tag" content="Local variable" />
+	   <meta property="article:tag" content="c programming tutorial" />
+       <meta property="article:tag" content="programming tutorial" />
+      <meta property="og:site_name" content="programmingtutorial" />
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@theeducation3">
+      <meta name="twitter:title" content="Local variable and global variable">
+      <meta name="twitter:description" content="Local variable and global variable :-  Variable that defined within the body of a function or a block are local to that function are called local variables">
+      <meta name="twitter:creator" content="programming tutorial">
+      <meta name="twitter:image:src" content="https://www.programmingtutorial.org/image/Local-variable.png">
+    
+      <meta name="author" content="https://www.programmingtutorial.org">
+	  <script type='application/ld+json'>
+{"@context":"https://schema.org","@graph":
+[{"@type":"Organization","name":"programming tutorial","url":"https://www.programmingtutorial.org"},
+ {"@type":"WebSite","url":"https://www.programmingtutorial.org","name":"programmingtutorial"},
+{"@type":"ImageObject","url":"https://www.programmingtutorial.org/image/Local-variable.png",
+"width":500,"height":500,"caption":"Local variable and global variable"},
+{"@type":"WebPage", "url":"https://www.programmingtutorial.org/c-programming-tutorial/local-variable-and-global-variable.html","inLanguage":"en-US",
+"name":"Local variable and global variable"},
+{"@type":"Article", "headline":"Local variable and global variable",
+"description":"Local variable and global variable :-  Variable that defined within the body of a function or a block are local to that function are called local variables",
+"keywords":"Local variable and global variable, Local variable example, Global variable example, Difference between local variable and global variable, Local variable, C Programming tutorial, programming tutorial",
+"articleSection":"programming tutorial"}]}
+</script>
+	  
+<!--end addtional property -->
+  <!-- SCRIPTS -->
+     <script src="https://www.programmingtutorial.org/js/jquery.js"></script>
+     <script src="https://www.programmingtutorial.org/js/bootstrap.min.js"></script>
+     <script src="https://www.programmingtutorial.org/js/jquery.stellar.min.js"></script>
+     <script src="https://www.programmingtutorial.org/js/jquery.magnific-popup.min.js"></script>
+     <script src="https://www.programmingtutorial.org/js/smoothscroll.js"></script>
+     <script src="https://www.programmingtutorial.org/js/custom.js"></script>
+     
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="https://www.programmingtutorial.org/css/style1.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143341628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143341628-1');
+</script>
+
+
+</head>
+<body>
+
+     <!-- PRE LOADER -->
+     <section class="preloader" >
+          <div class="spinner">
+               <span class="spinner-rotate" ></span>
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation" id="jkn">
+          <div >
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+						 <span class="icon icon-bar"></span>
+                       
+                    </button>
+
+                    <!-- lOGO TEXT HERE  -->
+                   
+               </div>
+<!-- disable right click 
+			   
+			   <script type="text/javascript">
+	
+$(function() {
+	$(this).bind('contextmenu', function() {
+			return false;
+	})
+	
+})
+</script>  -->
+<!-- does not copy cut pest 
+<script type="text/javascript">
+	
+$(document).ready(function() {
+	$('body').bind('cut copy paste', function (e) {
+		e.preventDefault();
+	})
+})
+</script>-->
+
+ <!--  MENU LINKS -->
+			  
+               <div class="collapse navbar-collapse" >
+			  
+                     <ul class="nav navbar-nav  navbar-left ">
+                            <li><a href="https://www.programmingtutorial.org"><i class="fa fa-home" style="font-size: 30px;"></i></a></li>
+
+                         <li><a href="https://www.programmingtutorial.org/python-programming/python-programming-tutorial.html" class="smoothScroll">python</a></li>
+                         <li><a href="https://www.programmingtutorial.org" class="smoothScroll">C Programming</a></li>
+						 <li><a href="https://www.programmingtutorial.org/c-plus-plus-programming/c-plus-plus-programming.html" class="smoothScroll">C++ Programming</a></li>
+						 <li><a href="https://www.programmingtutorial.org/java-programming/introduction-to-java-programming.html" class="smoothScroll"> Java </a></li>
+                         
+                        
+                    </ul>
+                   <ul class="nav navbar-nav navbar-right" id="jkn2">
+                         <li><a href="https://www.facebook.com/allexamination28"><i class="fa fa-facebook-square"></i></a></li>
+                         <li><a href="https://twitter.com/Jitendr49342926"><i class="fa fa-twitter"></i></a></li>
+                         <li><a href="https://www.instagram.com/jitukumar2016/?hl=bn"><i class="fa fa-instagram"></i></a></li>
+						  <li><a href="https://www.linkedin.com/in/jitendra-kumar-95a8a5163/"><i class="fa fa-linkedin"></i></a></li>
+       
+                    </ul> 
+					
+               </div>
+			   </div>
+
+          
+     </section>
+	 
+	 
+     <!-- HOME -->
+                <section>
+           <div class="container">
+		    
+     <!-- HOME -->
+	 <div class="row">
+
+                   
+	  <div class="col-md-8 col-sm-8">
+	  <h1>Local variable and global variable</h1>
+	 <p> <strong>Local variable:- </strong> The variable that defined within the body of a function or a block are called local variable to that function or block.
+	 These type of variables are created when function is entered and these type of variables are destroyed when the function is exited.
+	 </p>
+
+                         
+			
+
+	<img src="https://www.programmingtutorial.org/image/Local-variable.png" alt="Local variable and global variable" width="100%" height="100%">
+<p><strong>The syntax of Local variable in c is given below :-</strong></p>
+<pre ><p>void func(void);
+{ 
+ int a, b;
+ ......
+ ......
+}</p></pre> 
+<p>Here a and b are local variables of function, which are defined within the body of the function func(). This type of variable can be used only in those functions or blocks, in which they are declared. </p>
+<p><strong>Local variable example</strong></p>
+<pre ><p>#include &lt;stdio.h&gt;
+void func(void);
+int main () {
+  int a=10, b=10, c;  <strong>/* local variables in main function  */ </strong>
+  c = a + b;
+  printf ("The value of a = %d, b = %d and c = %d in main function\n", a, b, c);
+ func();
+  return 0;
+}
+void func(void)
+{ 
+ int a=20, b=30, c; <strong> /* local variables in User-defined functions  */ </strong>
+  c = a + b;
+printf ("The value of a = %d, b = %d and c = %d in User-defined functions \n", a, b, c);
+}</p></pre> 
+<p><strong>Output of program after compilation  and execution is given below.</strong></p>
+<pre ><p>The value of a = 10, b = 10 and c = 20 main function
+The value of a = 20, b = 30 and c = 50 in User-defined functions</p></pre> 
+
+
+
+	 <p> <strong>Global variable:- </strong>The variables that are defined outside of function are called global variables. All functions in program can used and modify these type of variables. It is useful to declare a global variable, if it is to be used by many functions in program.
+	 Global variables are automatically initialized to 0 at declaration time of variable.</p>
+<p><strong>Global variable example</strong></p>
+<pre ><p>#include &lt;stdio.h&gt;
+void func1(void);
+void func2(void);
+int a, b=6;
+int main() {
+  printf("Inside main() : a=%d, b=%d\n", a, b);
+  func1();
+  func2();
+  return 0;
+}
+void func1(void)
+{
+  printf("Inside func1() : a=%d, b=%d\n", a, b);   
+}
+void func2(void)
+{
+  int a=8;
+  printf("Inside func2() : a=%d, b=%d\n", a, b);
+}</p></pre> 
+<p><strong>Output of program after compilation  and execution is given below.</strong></p>
+<pre ><p>Inside main() : a=0, b=6
+Inside func1() : a=0, b=6
+Inside func2() : a=8, b=6</p></pre> 
+
+
+
+
+<p><strong>There are following Difference between local variable and global variable in C</strong><br>
+<table>
+					   <tbody  >
+					   <tr >
+        <th >Local variable </th>
+        <th >Global variable</th>
+		</tr>
+      <tr>
+        <td width="50%" >It is declared inside of function.</td>
+        <td width="50%" >It is declared outside of function.</td>
+		</tr>
+		<tr>
+        <td >If it is not initialized, then it store a garbage value.</td>
+        <td >If it is not initialized, then it store zero value as default value.</td>
+		</tr>
+		<tr>
+        <td > This type of variable is created when the function starts execution and lost when the functions terminate in program.</td>
+        <td >Global variable is created before main function of program and lost when the program terminates.</td>
+		</tr>
+		
+		<tr>
+        <td > Parameters passing is required for local variables to used the value in other functions.</td>
+        <td >Parameters passing is not necessary for a global variables.</td>
+		</tr>
+		<tr>
+        <td > When the value of local variable is modified in one function, then changes are not be affected in another function.</td>
+        <td >When the value of global variable is modified in one function, then changes are affected in another function.</td>
+		</tr>
+		
+		 
+		</tbody>
+	   </table>
+                      
+
+
+<p><strong>Advantages and disadvantages of Local variables.</strong><br>
+<b>Advantages:-</b><br>
+You can give  same name of local variables  in different functions, because they are only recognized by function in which they are declared. <br>
+Local variables are deleted as soon as function is terminated and release the memory space which occupies by it. <br>
+
+<b>Disdvantages:-</b><br>
+In local variable common data required to pass repeatedly, because data sharing is not possible between functions.<br>
+They have a very limited scope in program. <br>
+</p>
+
+<p><strong>Advantages and disadvantages of Global variables.</strong><br>
+<b>Advantages:-</b><br>
+1.You can use the global variable in all functions or modules of program.<br>
+2.Global variable is useful when multiple functions are using  same data. <br>
+<b>Disdvantages:-</b><br>
+1.When a lot variables declared as global variable, then they remain in the memory till program execution is completed. This can be cause of out of Memory issue. <br>
+2.In this type of variable data can be modified by any function in program. In this way any statements written in the program can change the value of global variables.<br>
+
+</p>
+
+
+
+
+
+			 </div>
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+						  <div class="col-md-4 col-sm-4">
+<h2>C Programming Tutorial</h2>
+
+<div class="jk">
+
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/c-programming-language.html"><h6>what is C Programming</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/hello-world-program-in-c.html"><h6>Hello World Program</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/while-loop-in-c.html"><h6>while loop in c</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/goto-statement-in-c.html"><h6>goto statement in c</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/nested-if-statement-in-c.html"><h6>nested if statement</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/switch-statement-in-c.html"><h6>switch statement in C</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/if-else-statement-in-c.html"><h6>if else statement </h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/continue-statement-in-c.html"><h6>continue statement </h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/break-statement-in-c.html"><h6>break statement</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/do-while-loop-in-c.html"><h6>do while loop in c</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/nested-loops-in-c.html"><h6>nested loops in c</h6></a>
+
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/functions-in-c-programming.html"><h6> Function in C</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/types-of-user-defined-functions-in-c.html" ><h6>user-defined functions</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/call-by-value-and-call-by-reference-in-c.html"><h6>Call by reference</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/local-variable-and-global-variable.html"><h6>Local variable</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/recursion-function-in-c.html"><h6>Recursion function in c</h6></a>
+<a href="https://www.programmingtutorial.org/c-programming-tutorial/array-in-c-programming-language.html"><h6>Array in c programming</h6></a>
+
+
+</div>
+
+</div>
+	 
+	
+	 </div>
+	 </div>
+	
+	  </div>
+			   <!-- FOOTER -->
+     <footer data-stellar-background-ratio="0.5">
+         
+               <div class="row" id="jk">
+
+                    <div class="col-md-3 col-sm-3">
+                        <div class="footer-thumb"> 
+                               <h4>Share Post</h4>
+                             <!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_email"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_linkedin"></a>
+<a class="a2a_button_pinterest"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+                    
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3"> 
+                          <div class="footer-thumb" > 
+                               <h4>Join Me</h4>
+                              <ul class="social-icon" >
+                         <li><a href="https://www.facebook.com/thepowerofscien28/"><i class="fa fa-facebook-square"></i></a></li>
+                         <li><a href="https://twitter.com/Jitendr49342926"><i class="fa fa-twitter"></i></a></li>
+                         <li><a href="https://twitter.com/Jitendr49342926"><i class="fa fa-instagram"></i></a></li>
+                        
+                        
+						  <li><a href="https://www.linkedin.com/in/jitendra-kumar-95a8a5163/"><i class="fa fa-linkedin"></i></a></li>
+                         
+                    </ul>
+                   
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3"> 
+                         <div class="footer-thumb" id="jk2" > 
+                              <h4> Our Services</h4>
+                              <ul class="footer-link">
+                                  
+                         <li><a href="https://www.programmingtutorial.org/python-programming/python-programming-tutorial.html" class="smoothScroll">python</a></li>
+                         <li><a href="https://www.programmingtutorial.org" class="smoothScroll">C Programming</a></li>
+						 <li><a href="https://www.programmingtutorial.org/c-plus-plus-programming/c-plus-plus-programming.html" class="smoothScroll">C++ Programming</a></li>
+						 <li><a href="https://www.programmingtutorial.org/java-programming/introduction-to-java-programming.html" class="smoothScroll"> Java </a></li>
+                         
+                                   
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3"> 
+                         <div class="footer-thumb" id="jk3"> 
+                        <h4 >Information</h4>
+                              <ul class="footer-link">
+                                  <li><a href="https://www.programmingtutorial.org/about-me.html">About Me</a></li>
+								   <li><a href="https://www.programmingtutorial.org/contact-me.php">Contect Me</a></li>
+                                   <li><a href="https://www.programmingtutorial.org/privacy-policy.html">Privacy Policy</a></li>
+								    <li><a href="https://www.programmingtutorial.org/term-and-condition.html">Term and Condition</a></li>
+                                  
+                              </ul>
+                         </div>
+                    </div>                    
+                       
+                    <div class="col-md-12 col-sm-12">
+                         <div class="footer-bottom">
+                              <div class="col-md-6 col-sm-6">
+                                   <div class="copyright-text"> 
+                                        <p>Copyright &copy; 2019 the power of seience</p>
+                                   </div>
+                              </div>
+							  <div class="col-md-6 col-sm-6">
+                                   <div itemscope itemtype="http://schema.org/Person">
+   <span itemprop="location">Location : Indian</span><br>
+   <span itemprop="email">Email : allexamination28@gmail.com</span>
+   
+  
+</div>
+                              </div>
+                             
+                         </div>
+                    </div>
+                    
+               </div>
+          
+     </footer>
+
+
+	
+</body>
+</html>
